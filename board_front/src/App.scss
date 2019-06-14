@@ -1,0 +1,29 @@
+.app-header {
+  background-color: #3db7cc;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  .menu-bar {
+    list-style-type: none;
+    li {
+      float: left;
+      a {
+        color: white;
+        text-decoration: none;
+        padding: 24px;
+        display: block;
+        border-bottom: 4px solid transparent;
+        &:hover {
+          color: #d4f4f1;
+          border-bottom: 4px solid #d4f4f1;
+        }
+      }
+    }
+  }
+}
+
+.app-body {
+  position: absolute;
+  top: 100px;
+}

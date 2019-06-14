@@ -1,0 +1,42 @@
+.board {
+    margin: 30px;
+    width: calc(100vw - 62px);
+}
+
+.board-list-item {
+    display: table;
+    border-bottom: 1px solid silver;
+    cursor: pointer;
+    &:hover {
+        background-color: #b2ebf4;
+    }
+    > div {
+        display: table-cell;
+        width: 100px;
+        text-align: center;
+        &:first-child {
+            width: 90%;
+        }
+    }
+}
+.board-view-item {
+    > div {
+        border-bottom: 1px solid silver;
+        .board-view-item-content {
+            min-height: 60vh;
+        }
+    }
+}
+
+.board-add {
+    .board-add-header {
+        display: flex;
+        justify-content: space-between;
+        > div:first-child {
+            width: 100px;
+        }
+        input {
+            width: calc(100vw - 60px - 100px);
+        }
+    }
+}
