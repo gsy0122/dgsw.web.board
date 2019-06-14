@@ -1,0 +1,69 @@
+# For a quick start check out our HTTP Requests collection (Tools|HTTP Client|Open HTTP Requests Collection).
+#
+# Following HTTP Request Live Templates are available:
+# * 'gtrp' and 'gtr' create a GET request with or without query parameters;
+# * 'ptr' and 'ptrp' create a POST request with a simple or parameter-like body;
+# * 'mptr' and 'fptr' create a POST request to submit a form with a text or file field (multipart/form-data);
+GET http://localhost:8080/api/user
+Accept: application/json
+
+###
+GET http://localhost:8080/api/post
+Accept: application/json
+
+###
+POST http://localhost:8080/api/user
+Content-Type: application/json
+
+{
+  "account": "user7",
+  "password": "1234",
+  "email": "user7@dgsw.hs.kr",
+  "username": "test7"
+}
+
+###
+POST http://localhost:8080/api/post
+Content-Type: application/json
+
+{
+  "userId": 1,
+  "title": "title1",
+  "content": "content1"
+}
+
+###
+PUT http://localhost:8080/api/user
+Content-Type: application/json
+
+{
+  "id": 1,
+  "account": "user1111",
+  "password": "1234",
+  "email": "user1111@dgsw.hs.kr",
+  "username": "test1111"
+}
+
+###
+DELETE http://localhost:8080/api/user?id=8
+Accept: application/json
+
+###
+GET http://localhost:8080/api/user/id?id=8
+Accept: application/json
+
+###
+GET http://localhost:8080/api/post/id?id=9
+Accept: application/json
+
+###
+POST http://localhost:8080/api/user/login
+Content-Type: application/json
+Accept: application/json
+
+{
+  "account": "u1",
+  "password": "1234"
+}
+
+###
